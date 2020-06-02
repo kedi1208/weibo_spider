@@ -65,9 +65,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'weibo.pipelines.WeiboPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'weibo.pipelines.WeiboPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -89,3 +89,15 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+mongo_host = '119.45.14.126'
+mongo_port = 27017
+mongo_db_name = 'weibo1'
+mongo_db_collection = 'weibohot'
+mongo_host_uri = 'mongodb://admin:123456@119.45.14.126:27017/?authSource=admin'
+
+mysql_host = '119.45.14.126'
+mysql_port = 3306
+mysql_user = 'root'
+mysql_passwd = 'Shawn_yu1028'
+mysql_db_name = 'weibo'
