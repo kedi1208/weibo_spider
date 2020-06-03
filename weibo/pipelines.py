@@ -58,7 +58,7 @@ class WeiboPipeline:
 
         # mysql conn
         try:
-            sql = 'INSERT INTO weibohot (id,topic_name,topic_rank,topic_hot,in_time,hot_type) VALUES \
+            sql = 'INSERT INTO weibohot (topic_id,topic_name,topic_rank,topic_hot,in_time,topic_type) VALUES \
                 ("{5}","{0}", {1}, {2}, "{3}", "{4}" )'.format(data["topic_name"], 
                 int(data["topic_rank"]), int(data["topic_hot"]), data["in_time"], data["hot_type"], data["topic_id"])
             # print(sql)
